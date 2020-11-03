@@ -22,16 +22,17 @@ if (isset($_POST['pWord'])) {
     $pass = $_POST['pWord'];
 }
 
-$sql = "INSERT INTO users (firstName, lastName, username, email, password) VALUES ($fn, $ln, $uN, $em, $pass)";
+$sql = "INSERT INTO users (firstName, lastName, username, email, password) VALUES ('$fn', '$ln', '$uN', '$em', '$pass')";
 
 if (mysqli_query($conn, $sql)) {
-    echo "Account Registered !! You can now login!!";
+    echo "New record created successfully";
 } else {
-    echo "Error : " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+  
+mysqli_close($conn);
 
-$conn = null;
-
+echo "\n";
 echo $fn;
 echo "           ";
 echo $ln;
