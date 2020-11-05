@@ -10,7 +10,7 @@
         <h1 id="header">Bamboo</h1>
         <img src="Picture1.png" id="logo" alt="Bamboo Logo" width="50" height="50">
 
-
+        <script src = "emailS.js"></script>
 
         <form action="sendEmail.php" method="post">
             <div class = "textPrompt">
@@ -22,15 +22,26 @@
                 </p>
             </div>
 
+            
             <div>
                 <img src="avatar_login.png" alt="Avatar" class="avatar"></img>
             </div>
             <div class = "loginInfo">
                 <label id="up_size" for="fname">Please enter your Username/Email</label><br>
                 <input type="text" placeholder="Enter Username/Email" id="uName" name="uName"><br>
+                
+                <div>
+                    <button id = "mail">Reset Password!</button>
+                </div>
+
+
                 <a id="hyp_links" href="login.html">Sign In<br><br></a>      
             </div>
         </form>         
+
+        
+
+        
 
     </body>
 

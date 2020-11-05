@@ -32,15 +32,5 @@ if (mysqli_query($conn, $sql)) {
   
 mysqli_close($conn);
 
-echo "\n";
-echo $fn;
-echo "           ";
-echo $ln;
-echo "           ";
-echo $uN;
-echo "           ";
-echo $em;
-echo "           ";
-echo $pass;
-    
+
 ?>
