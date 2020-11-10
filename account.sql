@@ -7,4 +7,5 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(25) NOT NULL
+  'confirmed?' int(1) NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

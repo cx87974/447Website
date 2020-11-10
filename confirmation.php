@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="confirmation.css">
     <body>
         <video autoplay muted loop id="bgVideo">
         <source src="siteBG.mp4" type="video/mp4">
@@ -12,36 +12,26 @@
 
         <script src = "emailS.js"></script>
 
-        <form action="sendEmail.php" method="post">
+        <form action="login.html">
             <div class = "textPrompt">
                 <h2>
                     BambooBot
                  </h2>
                  <p>               
-                    Forgot Your Password ?
+                    Please Confirm Your Account!
                 </p>
-            </div>
 
-            
-            <div>
                 <img src="avatar_login.png" alt="Avatar" class="avatar"></img>
-            </div>
-            <div class = "loginInfo">
-                <label id="up_size" for="fname">Please enter your Username/Email</label><br>
-                <input type="text" placeholder="Enter Username/Email" id="uName" name="uName"><br>
-                
-                <div>
-                    <button id = "mail">Reset Password!</button>
+                <p> We have sent you an email regarding your account confirmation. Please confirm your email. </p>
+                <button id="pWord" href="login.php">Sign In</button><br>
                 </div>
 
-
-                <a id="hyp_links" href="login.html">Sign In<br><br></a>      
-            </div>
-        </form>         
+            </form>         
 
         
-
-        
+    <?php
+    session_abort();
+    ?>
 
     </body>
 
