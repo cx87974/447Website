@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+
+
+#index.html
+<head>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>  
+</head>
+
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="login.css">
@@ -12,7 +19,7 @@
 
         <script src = "emailS.js"></script>
 
-        <form action="sendEmail.php" method="post">
+        
             <div class = "textPrompt">
                 <h2>
                     BambooBot
@@ -31,13 +38,13 @@
                 <input type="text" placeholder="Enter Username/Email" id="uName" name="uName"><br>
                 
                 <div>
-                    <button id = "mail">Reset Password!</button>
+                    <button id = "email" onclick = "sendEmail()">Reset Password!</button>
                 </div>
 
 
                 <a id="hyp_links" href="login.html">Sign In<br><br></a>      
             </div>
-        </form>         
+               
 
         
 
