@@ -1,7 +1,8 @@
-document.getElementById("email").onclick = function() {sendEmail()};
+document.getElementById().onclick = function() {sendEmail()};
 
 
 function sendEmail(){
+   
     console.log("sending email")
     Email.send({
         Host: "smtp.gmail.com",
