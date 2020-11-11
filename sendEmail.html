@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 
-#index.html
 <head>
     <script src="https://smtpjs.com/v3/smtp.js"></script>  
 </head>
@@ -19,7 +18,7 @@
 
         <script src = "emailS.js"></script>
 
-        
+        <form onsubmit="sendEmail(); return false;">
             <div class = "textPrompt">
                 <h2>
                     BambooBot
@@ -34,18 +33,18 @@
                 <img src="avatar_login.png" alt="Avatar" class="avatar"></img>
             </div>
             <div class = "loginInfo">
-                <label id="up_size" for="fname">Please enter your Username/Email</label><br>
-                <input type="text" placeholder="Enter an email" id="uName" name="uName"><br>
+                <label id="up_size" for="fname">Please enter your Email</label><br>
+                <input type="text" placeholder="Enter an Email" id="uName" name="uName"><br>
                 
                 <div>
-                    <button id = "email" onclick = "sendEmail()">Reset Password!</button>
+                    <button id = "email">Reset Password!</button>
                 </div>
 
 
                 <a id="hyp_links" href="login.html">Sign In<br><br></a>      
             </div>
                
-
+        </form>
         
 
         
