@@ -3,6 +3,9 @@
 
 function sendEmail(){
     var email = document.getElementById("uName").value;
+    
+    var newPassowrd = makeid(12);
+    
     Email.send({
         Host: "smtp.gmail.com",
         Username: 'roibu1@umbc.edu',
@@ -10,7 +13,7 @@ function sendEmail(){
         To: email,
         From: 'no-reply@umbc.edu' ,
         Subject : "Password Reset",
-        Body : "Reset your password here: ",
+        Body : newPassowrd,
     }).then(
         message => alert("Check your email!")
     );
@@ -19,3 +22,14 @@ function sendEmail(){
 }
 
 
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+       result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+ }
+ 
+ 
