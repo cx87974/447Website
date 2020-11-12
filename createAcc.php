@@ -56,8 +56,6 @@ $text = array();
 if($action['result'] != 'error'){
     $fn = md5($fn);
     $ln = md5($ln);
-    $uN = md5($uN);
-    $em = md5($em);
     $pass = md5($pass);
 }
 
