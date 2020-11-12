@@ -5,10 +5,10 @@ function sendEmail(){
     var email = document.getElementById("uName").value;
     
     var newPassowrd = makeid(12);
-    var message = "login with this password: ";
+    var message = "Password reset to ";
     var mP = message.concat(newPassowrd);
 
-    console.log(mP);
+    console.log(mP)
 
     Email.send({
         Host: "smtp.gmail.com",
@@ -19,13 +19,18 @@ function sendEmail(){
         Subject : "Password Reset",
         Body :mP,
     }).then(
-        message => alert("Check your email!")
+        
+        setTimeout('redirect()', 100)
+        
     );
-
+    
 
 }
 
+function redirect(){
 
+    window.location.assign("resetPass.html");
+}
 function makeid(length) {
     var result           = '';
     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
