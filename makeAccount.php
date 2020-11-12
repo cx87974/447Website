@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="sendEmail.css">
+    <link rel="stylesheet" href="makeAccount.css">
     <body>
         <video autoplay muted loop id="bgVideo">
         <source src="siteBG.mp4" type="video/mp4">
